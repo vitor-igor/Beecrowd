@@ -4,4 +4,4 @@ nota3 = float(input())
 
 media = (nota1 * 2 + nota2 * 3 + nota3 * 5) / 10
 
-print("MEDIA = {:.1f}".format(media))
+print(f"MEDIA = {media:.1f}")
