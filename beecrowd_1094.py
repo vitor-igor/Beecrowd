@@ -7,7 +7,7 @@ cobaias_sapos = 0
 for i in range(qtde_testes):
     quantia, tipo = input().split()
 
-    quantia = int(input())
+    quantia = int(quantia)
 
     soma_cobaias += quantia
 
@@ -22,6 +22,6 @@ print(f"Total: {soma_cobaias} cobaias")
 print(f"Total de coelhos: {cobaias_coelhos}")
 print(f"Total de ratos: {cobaias_ratos}")
 print(f"Total de sapos: {cobaias_sapos}")
-print(f"Percentual de coelhos: 31.52 %")
-print(f"Percentual de ratos: 43.48 %")
-print(f"Percentual de sapos: 25.00 %")
+print(f"Percentual de coelhos: {((cobaias_coelhos * 100) / soma_cobaias):.2f} %")
+print(f"Percentual de ratos: {((cobaias_ratos * 100) / soma_cobaias):.2f} %")
+print(f"Percentual de sapos: {((cobaias_sapos * 100) / soma_cobaias):.2f} %")
