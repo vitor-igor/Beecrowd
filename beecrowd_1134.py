@@ -1,6 +1,14 @@
-contador_alcool = 0
-contador_gasolina = 0
-contador_diesel = 0
+combustivel = {
+    1: "alcool",
+    2: "gasolina",
+    3: "diesel",
+}
+
+contador = {
+    "alcool": 0,
+    "gasolina": 0,
+    "diesel": 0
+}
 
 numero = 0
 
@@ -10,15 +18,10 @@ while True:
         numero = int(input())
     if (numero == 4):
         break
-
-    if (numero == 1):
-        contador_alcool += 1
-    elif (numero == 2):
-        contador_gasolina += 1
-    elif (numero == 3):
-        contador_diesel += 1
+    else:
+        contador[combustivel[numero]] += 1
 
 print("MUITO OBRIGADO")
-print(f"Alcool: {contador_alcool}")
-print(f"Gasolina: {contador_gasolina}")
-print(f"Diesel: {contador_diesel}")
+print(f"Alcool: {contador['alcool']}")
+print(f"Gasolina: {contador['gasolina']}")
+print(f"Diesel: {contador['diesel']}")

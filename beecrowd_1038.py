@@ -1,18 +1,13 @@
-codigo, quantidade = input().split()
+produtos = {
+    1: 4.0,
+    2: 4.5,
+    3: 5.0,
+    4: 2.0,
+    5: 1.5
+}
 
-quantidade = int(quantidade)
+codigo, quantidade = [int(x) for x in input().split()]
 
-total = 0
-
-if (codigo == "1"):
-    total = 4.0 * quantidade
-elif (codigo == "2"):
-    total = 4.5 * quantidade
-elif (codigo == "3"):
-    total = 5.0 * quantidade
-elif (codigo == "4"):
-    total = 2.0 * quantidade
-elif (codigo == "5"):
-    total = 1.5 * quantidade
+total = produtos[codigo] * quantidade
 
 print(f"Total: R$ {total:.2f}")
